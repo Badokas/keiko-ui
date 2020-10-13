@@ -5,16 +5,16 @@
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "cross-env": "^6.0.3",
-    "nollup": "^0.10.6",
-    "rollup": "^2.10.2",
-    "rollup-plugin-hot": "^0.0.22",
+    "nollup": "^0.13.12",
+    "rollup": "^2.29.0",
+    "rollup-plugin-hot": "^0.1.1",
     "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-svelte-hot": "^0.7.0",
+    "rollup-plugin-svelte-hot": "^0.10.0",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "~3.22.2"
+    "svelte": "~3.29.0"
   },
   "dependencies": {
-    "raf-throttle": "^2.0.3",
+    "raf-throttle": "^2.0.5",
     "robot3": "^0.2.18",
     "sirv-cli": "^0.4.4"
   },

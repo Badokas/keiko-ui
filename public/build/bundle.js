@@ -1,16 +1,17 @@
 (function() {
-  var d = window.document
-  var wsServerUrl = window.location.protocol
+  const d = window.document
+  let wsServerUrl = window.location.protocol
     + '//' + (window.location.host || 'localhost').split(':')[0]
     + ':33440/';
   
   if (!window['__ROLLUP_PLUGIN_HOT_RUNTIME']) {
-    var loaded = false;
-    var callbacks = [];
+    let loaded = false;
+    const callbacks = [];
     window['__ROLLUP_PLUGIN_HOT_RUNTIME'] = {
       host: null,
       port: 33440,
       ws: false,
+      hot: true,
       then: function(cb) {
         if (loaded) {
           setTimeout(cb, 0);
@@ -19,7 +20,7 @@
         }
       }
     };
-    var script = d.createElement('script');
+    const script = d.createElement('script');
     script.async = 1;
     script.src = wsServerUrl + 'runtime/hmr-runtime.js';
     script.onload = () => {
