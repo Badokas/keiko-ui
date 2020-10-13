@@ -1,10 +1,11 @@
 <script>
-  import Welcome from "./components/Welcome/Welcome.svelte";
-  import SvgAutogrow from "./components/SvgAutogrow/SvgAutogrow.svelte";
-  import Waveforms from "./components/Waveforms/Waveforms.svelte";
-  import ModularPatch from "./components/ModularPatch/ModularPatch.svelte";
-  import LooperUi from "./components/LooperUi/LooperUi.svelte";
-  import WaveSin from "./components/WaveSin/WaveSin.svelte";
+  import Welcome from './components/Welcome/Welcome.svelte';
+  import SvgAutogrow from './components/SvgAutogrow/SvgAutogrow.svelte';
+  import Waveforms from './components/Waveforms/Waveforms.svelte';
+  import ModularPatch from './components/ModularPatch/ModularPatch.svelte';
+  import LooperUi from './components/LooperUi/LooperUi.svelte';
+  import WaveSin from './components/WaveSin/WaveSin.svelte';
+  import Dial from './components/Dial/Dial.example.svelte';
 
   let currentComponent = Welcome;
 
@@ -14,7 +15,8 @@
     Waveforms: Waveforms,
     ModularPatch: ModularPatch,
     LooperUi: LooperUi,
-    WaveSin: WaveSin
+    WaveSin: WaveSin,
+    Dial: Dial,
   };
 
   async function changeComponent(e) {
